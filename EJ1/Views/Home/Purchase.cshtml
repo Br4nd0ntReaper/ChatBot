@@ -1,0 +1,145 @@
+﻿
+@{
+    ViewBag.Title = "Purchase";
+}
+
+<head>
+    <style>
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .form-group {
+            margin-bottom: 5px;
+        }
+
+        label {
+            color: aliceblue;
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .btn-group {
+            text-align: center;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-secondary {
+            background-color: #ccc;
+        }
+
+        .content {
+            max-width: 1170px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 1.5em;
+        }
+
+        .logotype {
+            text-align: center;
+            font-size: 3em;
+        }
+
+            .logotype span {
+                color: #c80000;
+            }
+
+        .contact-wraper {
+            box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+        }
+
+            .contact-wraper > * {
+                padding: 2.5em;
+            }
+
+        .contact-form {
+            background: #dc6c00;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-dark-subtle rounded-4">
+        <div class="content">
+            <h1 class="logotype">Realiza tu<span> compra</span></h1>
+
+            <div class="contact-wraper">
+                <div class="contact-form rounded-start-3">
+                    <h3>Llena el formulario :D</h3>
+                    <form action="">
+
+                        <div class="form-group">
+                            <label for="dni">DNI:</label>
+                            <input type="text" id="dni" name="dni">
+                        </div>
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="apellidos">Apellidos:</label>
+                            <input type="text" id="apellidos" name="apellidos">
+                        </div>
+                        <div class="form-group">
+                            <label for="direccion">Dirección:</label>
+                            <input type="text" id="direccion" name="direccion">
+                        </div>
+                        <div class="form-group">
+                            <label for="celular">Celular:</label>
+                            <input type="text" id="celular" name="celular">
+                        </div>
+                        <div class="form-group">
+                            <label for="correo">Correo:</label>
+                            <input type="email" id="correo" name="correo">
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn btn-secondary"><a href="~/Home/Food" class="text-decoration-none">Regresar</a></button>
+                            <button type="button" class="btn btn-primary rounded-end-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</button>
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">CangreBurger dice:</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Muchas Gracias por su compra :)
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-info rounded-end-3">
+                    <img src="~/css/cangreburger.jpg" height="550" width="450" class="rounded-4" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

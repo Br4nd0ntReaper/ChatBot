@@ -1,0 +1,140 @@
+﻿@{
+    ViewBag.Title = "INICIO";
+}
+
+@Styles.Render("~/Content/css")
+<link rel="stylesheet" href="~/css/StyleSheet1.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+<head>
+    <style>
+        p, h1 {
+            color: rgb(8, 22, 34);
+            font-size: 4vmin;
+            padding: calc(calc(1em / 16) / 2);
+            letter-spacing: calc(1em / 12);
+        }
+
+        h2 {
+            color: rgb(8, 22, 34);
+            font-size: 4vmin;
+            padding: calc(calc(1em / 16) / 2);
+            letter-spacing: calc(1em / 12);
+        }
+
+        h4 {
+            color: rgb(8, 22, 34);
+            font-size: 3vmin;
+            padding: calc(calc(1em / 16) / 2);
+            letter-spacing: calc(1em / 12);
+        }
+        
+
+    </style>
+</head>
+<main>
+    <section class="row" aria-labelledby="aspnetTitle">
+        <h1 id="title">¡Bienvenido!</h1>
+        <p class="lead">Aquí encontrarás diferentes variedades de comidas, comidas rápidas y postres. ¡Disfruta!</p>
+        <p><a href="https://comidasperuanas.net/platos-tipicos-de-la-costa-peruana/" class="btn btn-outline-success btn-md">Variedades &raquo;</a></p>
+    </section>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active rounded-pill" data-bs-interval="5000">
+                <img src="~/css/comida-rapida.jpg" width="100" height="500" class="d-block w-100 rounded-pill" alt="Entradas - goSenati">
+                <div class="carousel-caption d-none d-md-block text-light">
+                    <h3><b>Comidas</b></h3>
+                    <h5><b>Hamburguesas, Nuggets de pollo, Hot wings y más...</b></h5>
+                </div>
+            </div>
+            <div class="carousel-item rounded-pill" data-bs-interval="5000">
+                <img src="~/css/helados.jpg" width="100" height="500" class="d-block w-100 rounded-pill" alt="Segundos - goSenati">
+                <div class="carousel-caption d-none d-md-block text-info">
+                    <h3 style="color:black"><b>Postres</b></h3>
+                    <h5 style="color:black"><b>Helados, McFlurrys y más...</b></h5>
+                </div>
+            </div>
+            <div class="carousel-item rounded-pill">
+                <img src="~/css/hamburguesa.jpg" width="100" height="500" class="d-block w-100 rounded-pill" alt="Postres - goSenati">
+                <div class="carousel-caption d-none d-md-block text-dark">
+                    <h3><b>Combos</b></h3>
+                    <h5><b>Combo duo, Cheesy Jalapeño Bacon with Cheese, Big CangreBurger, CbBruger,más...</b></h5>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        <br /><br />
+    </div>
+
+    <div class="row">
+        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+            <img src="~/css/personal.jpg" class="card-img-top rounded-circle" height="350" alt="Chefs">
+            <p><h2 id="gettingStartedTitle" class="text-center" style="color: #E87B2B; font-weight: bold">Nuestro personal</h2></p>
+            <h4 style="text-align:justify">Todo personal reciben capacitación constante de acuerdo a como preparar y servir nuestros productos, y cumplir con los protocolos de calidad.</h4>
+        </section>
+        <section class="col-md-4" aria-labelledby="librariesTitle">
+            <img src="~/css/local.jpg" class="card-img-top rounded-circle" height="350" alt="Local">
+            <p><h2 id="librariesTitle" class="text-center" style="color: #E87B2B; font-weight: bold">Local amplio</h2></p>
+            <h4 style="text-align:justify">Nuestro local se mantiene limpio y ordenado a la espera de nuestros clientes.</h4>
+        </section>
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <img src="~/css/carta.jpg" class="card-img-top rounded-circle" height="350" alt="Variedades">
+            <p><h2 id="hostingTitle" class="text-center" style="color: #E87B2B; font-weight: bold">Variedades</h2></p>
+            <h4 style="text-align:justify">Cada día servimos variedades de combos para satisfacer a nuestros clientes.</h4>
+        </section>
+       
+
+        <div class="card mb-xl-4" style="max-width: auto; padding-left:0; margin-top:50px">
+            <div class="row g-0">
+                <div class="col-md-5">
+                    <img src="~/css/delivery.jpg" width="750" height="550" class="img-fluid " alt="Delivery">
+                </div>
+                <div class="col-md-5">
+                    <div class="card-body"style="text-align:justify">
+                        <h1 class="card-title" style="color: #B8B202 "><b>Ofrecemos Delivery</b></h1>
+                        <p class="text-uppercase font-monospace"><h4>Compra online y disfruta promociones exclusivas. Paga en tu domicilio u oficina, con efectivo o tarjeta, sin costo adicional. ¡Fácil y rápido!</h4></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-xl-4" style="max-width: auto; padding-right:0">
+            <div class="row g-0">
+                <div class="col-md-5">
+                    <div class="card-body" style="text-align:justify">
+                        <h1 class="card-title" style="color: #B8B202 "><b>Control de calidad</b></h1>
+                        <p class="text-uppercase font-monospace" ><h4>Contamos con una ISO 9001, desarrollándose controles de calidad de la cadena de suministro de nuestros productos.</h4></p>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <img src="~/css/calidad.jpg" class="img-fluid" alt="Control de calidad">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card mb-xl-4" style="max-width: auto; padding-left: 0">
+            <div class="row g-0">
+                <div class="col-md-5">
+                    <img src="~/css/fresco.jpg" width="550" height="400" class="img-fluid" alt="Alimentos frescos">
+                </div>
+                <div class="col-md-7">
+                    <div class="card-body" style="text-align:justify">
+                        <h1 class="card-title" style="color: #B8B202 "><b>Alimentos frescos</b></h1>
+                        <p class="text-uppercase font-monospace"><h4>Todas nuestras comidas son preparadas con alimentos frescos y que luego pasarán a los comensales para el goce.</h4></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</main>
